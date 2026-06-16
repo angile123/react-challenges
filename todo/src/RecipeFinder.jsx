@@ -21,8 +21,7 @@ export default function RecipeFinder() {
       </form>
 
       {loading && <p>Loading...</p>}
-      {error && <p>An error has occurred</p>}
-
+      {error && <p>{error.message}</p>}
       {data && <Meals {...{ data }} />}
     </div>
   );
