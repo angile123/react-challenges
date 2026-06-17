@@ -4,7 +4,7 @@ import Meals from "./components/Meals";
 export default function RecipeFinder() {
   const [url, setUrl] = useState(null);
   const { loading, error, data } = useFetch(url);
-  console.log(data);
+
   function handleForm(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
